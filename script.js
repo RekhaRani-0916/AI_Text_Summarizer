@@ -37,13 +37,19 @@ function submitData(e) {
   };
 
   fetch('/summarize', requestOptions)
-    .then(response => response.text())
-    .then(summary => {
-      summarizedTextArea.value = summary;
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();  // Expecting JSON response
+    })
+    .then(data => {
+      summarizedTextArea.value = data.summary || 'Error summarizing text.';
       submitButton.classList.remove("submit-button--loading");
     })
     .catch(error => {
-      console.log(error.message);
+      console.error('Error:', error.message);
+      summarizedTextArea.value = 'Error summarizing text.';
       submitButton.classList.remove("submit-button--loading");
     });
 }
