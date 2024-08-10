@@ -22,10 +22,11 @@ async function summarizeText(text) {
 
   try {
     const response = await axios.request(config);
-    return response.data[0].summary_text; // Ensure this matches the API's response structure
+    console.log(response.data); // Log the response to inspect the structure
+    return response.data[0].summary_text; // Adjust based on actual response structure
   } 
   catch (error) {
-    console.error(error);
+    console.error(error.response ? error.response.data : error.message);
     throw new Error('Error summarizing text');
   }
 }
