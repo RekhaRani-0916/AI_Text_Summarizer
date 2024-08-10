@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AI Text Summarizer App</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <h1>AI Text Summarizer App</h1>
+    <p>Welcome to the AI Text Summarizer App! Summarize lengthy texts quickly and easily using our AI-powered tool.</p>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="main-content">
+    <div class="container">
+      <div class="text-box">
+        <textarea id="text_to_summarize" name="text_to_summarize" placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)" maxlength="100000"></textarea>
+        <button id="submit-button" class="submit-button">
+          <span class="submit-button-text">Summarize</span>
+        </button>
+      </div>
+      <div class="text-box">
+        <textarea id="summary" name="summarized_text" placeholder="Summarized text will appear here" readonly></textarea>
+      </div>
+    </div>
+  </main>
+
+  <!-- Call-to-Action Section -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <div class="cta-text">
+        <h2>Curious how to build this app?</h2>
+        <p>Learn more by following the step-by-step guide.</p>
+        <a href="https://www.postman.com/student-program/student-expert/?utm_campaign=CGC&utm_medium=referral&utm_source=internal&utm_term=pbl-skilljar&utm_content=pbl_summariser_app" class="cta-button" target="_blank" rel="noopener nofollow">Learn More</a>
+      </div>
+      <img src="images/learning.png" alt="Learning how to build an app" class="cta-image">
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+ 
+</body>
+</html>

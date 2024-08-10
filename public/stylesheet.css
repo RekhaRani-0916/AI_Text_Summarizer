@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: whitesmoke;
+}
+
+p {
+  font-size: 18px;
+  color: whitesmoke;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+/* Header Styles */
+.header {
+  background-color: #1f324e;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: 150;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Main Content Styles */
+.main-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.text-box {
+  flex: 1;
+  min-width: 450px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  width: 90%;
+  height: 300px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #dcdde1;
+  border-radius: 4px;
+  resize: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+}
+
+textarea[readonly] {
+  background-color: #f9f9f9;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #dfcdc3;
+}
+
+/* Call-to-Action Section Styles */
+.cta-section {
+  background-color: #ecf0f1;
+  padding: 40px;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.cta-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-text {
+  max-width: 400px;
+}
+
+.cta-content h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 12px 20px;
+  background-color: #27ae60;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #2ecc71;
+}
+
+.cta-image {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .cta-content {
+    flex-direction: column;
+  }
+}
